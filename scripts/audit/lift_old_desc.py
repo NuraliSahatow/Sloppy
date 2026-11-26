@@ -27,7 +27,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]  # scripts/audit/ -> repo root (parent.parent was scripts/)
 DATA = ROOT / 'data'
 STATS = DATA / 'stats'
 

@@ -11,7 +11,7 @@ Outputs straight into icons/ui/gothic/.
 import os
 from PIL import Image
 
-_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # scripts/gen/ -> repo root
 _OUT_DIR = os.path.join(_ROOT, "icons", "ui", "gothic")
 
 S = 32

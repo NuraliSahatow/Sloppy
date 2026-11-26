@@ -10,7 +10,7 @@ from __future__ import annotations
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]  # scripts/gen/ -> repo root (parents[1] wrote to scripts/icons/)
 OUT_DIR = ROOT / "icons" / "ui" / "gothic"
 S = 32
 

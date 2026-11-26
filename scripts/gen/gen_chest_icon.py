@@ -25,7 +25,7 @@ import glob
 import tempfile
 from PIL import Image
 
-_HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # scripts/gen/ -> repo root
 _SRC = os.path.join(_HERE, "icons", "ref", "chest.mp4")
 _OUT_DIR = os.path.join(_HERE, "icons", "ui", "gothic")
 
